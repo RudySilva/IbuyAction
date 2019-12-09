@@ -1,0 +1,74 @@
+<!-- BILLING HISTORY -->
+<!-- ITEM 1 -->
+
+  <div *ngFor='let billing of billingsHistory' class="item" 
+      [ngClass]="{'outstanding': billing.status == 'outstanding', paid: billing.status == 'paid'}" >
+      <div class="item-left">
+          <span class="dot"
+          [ngClass]="{'dot-red': billing.status == 'outstanding', 'dot-green': billing.status == 'paid'}"></span>
+          <h1>{{ billing.title }} - Sale Number: {{ billing.saleNumber }}</h1>
+          <h1>{{ billing.date }}</h1>
+          <p>{{ billing.description }}</p>
+        </div>
+        <div class="item-middle">
+          <span class="status">{{ billing.status | uppercase }}</span>
+          <span class="status">{{ billing.amount | currency:'USD':'symbol':'1.0-0'}}</span>
+        </div>
+        <div class="item-right">
+          <button class="btn" 
+          [ngClass]="{'btn-red' : billing.status == 'outstanding', 'btn-green' : billing.status == 'paid'}">
+            {{ billing.status == 'outstanding' ? 'PAY' : 'VIEW' }} INVOICE
+          </button>
+        </div> 
+  </div>  
+
+
+<!--div class="item outstanding">
+    <div class="item-left">
+        <span class="dot dot-red"></span>
+        <h1>GROCERY AUCTION - Sale Number: 190317</h1>
+        <h1>17/03/19</h1>
+        <p>A 20% buyers premium is added to all invoices</p>
+      </div>
+      <div class="item-middle">
+        <span class="status">OUTSTANDING</span>
+        <span class="status">$200</span>
+      </div>
+      <div class="item-right">
+        <button class="btn btn-red">PAY INVOICE</button>
+      </div> 
+  
+</div>        
+<div class="item paid">
+  <div class="item-left">
+    <span class="dot dot-yellow"></span>
+    <h1>GROCERY AUCTION - Sale Number: 190317</h1>
+    <h1>17/03/19</h1>
+    <p>A 20% buyers premium is added to all invoices</p>
+  </div>
+  <div class="item-middle">
+    <span class="status">PAID</span>
+    <span class="status">$200</span>
+  </div>
+  <div class="item-right">
+    <button class="btn btn-green">VIEW INVOICE</button>
+  </div>
+</div>
+
+<div class="item paid">
+  <div class="item-left">
+    <span class="dot dot-green"></span>
+    <h1>GROCERY AUCTION - Sale Number: 190317</h1>
+    <h1>17/03/19</h1>
+    <p>A 20% buyers premium is added to all invoices</p>
+  </div>
+  <div class="item-middle">
+    <span class="status">PAID</span>
+    <span class="status">$200</span>
+  </div>
+  <div class="item-right">
+    <button class="btn btn-green">VIEW INVOICE</button>
+  </div>
+</div-->          
+<!-- END BILLING HISTORY -->
+  

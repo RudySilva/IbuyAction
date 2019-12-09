@@ -1,0 +1,287 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+}
+
+.page-container {
+  max-width: 1980;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.top-container {
+  display: flex;
+  height: 90px;
+  width: 100%;
+}
+
+.logo-container {
+  width: 300px;
+  order: 1;
+  height: 90px;
+  border-bottom: 15px solid #ca1717;
+}
+
+.logo-container img {
+  position: relative;
+  bottom: -20px;
+  left: 10px;
+  width: 270px;
+  max-height: 90px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.logo-container:after {
+  border-top: 75px solid white;
+  border-right: 75px solid #ca1717;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  z-index: 100;
+}
+
+.top-header {
+  order: 2;
+  flex: 2;
+  height: 90px;
+  background-color: #ca1717;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 75px;
+}
+
+.top-header h1 {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.top-header p {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.top-user {
+  order: 3;
+  flex: 1;
+  width: 100%;
+  height: 90px;
+  color: #fff;
+  background-color: #ca1717;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.username {
+  background-color: #fff;
+  width: 230px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.username img {
+  position: relative;
+  left: -10px;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.user-details {
+  height: 60px;
+  width: 230px;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.user-details h1 {
+  color: #000;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.user-details h2 {
+  display: inline-block;
+  color: #000;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* BOTTOM */
+.bottom-container {
+  flex: 1 auto;
+  order: 3;
+}
+
+/*-- COMPONENTS --*/
+.btn {
+  display: block;
+  width: 120px;
+  padding: 4px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-green {
+  background: #009247;
+}
+
+.btn-yellow {
+  background: #f6921e;
+}
+
+.btn-darkgray {
+  background: #414141;
+}
+
+.btn-red {
+  background: #ca1717;
+}
+
+.btn-gray {
+  background: gray;
+}
+
+.btn-lightgray {
+  background: rgb(165, 165, 165);
+}
+
+.btn-small-green {
+  width: 90px;
+  background-color: #009247;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.btn-big-green {
+  color: #fff;
+  background-color: #009247;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 0.3rem;
+}
+
+.dot-green {
+  background-color: green;
+}
+
+.dot-yellow {
+  background-color: #ffee26;
+}
+
+.dot-red {
+  background-color: red;
+}
+
+.breadcrumb {
+  font-size: 1rem;
+  list-style: none;
+  width: 100%;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.breadcrumb li a {
+  background-color: #ca1717;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  max-height: 1.5em;
+  padding: 0.2em 1em 0.2em 1.5em;
+  position: relative;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.breadcrumb li a:after {
+  border-top: 1.5em solid gray;
+  border-left: 1.5em solid #ca1717;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1.5rem;
+  z-index: 1;
+}
+
+.breadcrumb li:nth-of-type(1) {
+  min-width: 40%;
+}
+
+.breadcrumb li:nth-child(1) a {
+  background-color: #ca1717;
+  padding-left: 1rem;
+}
+
+.breadcrumb li:nth-child(1) a:after {
+  border-left: 1.5em solid #ca1717;
+  border-top: 1.5em solid gray;
+}
+
+.breadcrumb li:nth-child(2) a {
+  background-color: gray;
+}
+
+.breadcrumb li:nth-child(2) a:after {
+  border-left: 1.5em solid gray;
+  border-top: 1.5em solid darkgray;
+}
+
+.breadcrumb li:nth-child(3) a {
+  background-color: darkgray;
+}
+
+.breadcrumb li:nth-child(3) a:after {
+  border-left: 1.5em solid darkgray;
+  border-top: 1.5em solid lightgray;
+}
+
+.breadcrumb li:nth-child(4) a {
+  background-color: lightgray;
+}
+
+.breadcrumb li:nth-child(4) a:after {
+  border-left: 1.5em solid lightgray;
+}
+
+.breadcrumb li:last-of-type a:after {
+  border-top: 1.5em solid transparent;
+}

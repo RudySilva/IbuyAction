@@ -1,0 +1,32 @@
+[
+    {
+        "billingId": "1",
+        "bidderId": "1",
+        "title": "GROCERY AUCTION",
+        "saleNumber": "190317",
+        "date": "17/03/19",
+        "description": "A 20% buyers premium is added to all invoices",
+        "amount": "300",
+        "status": "outstanding"
+    },
+    {
+        "billingId": "2",
+        "bidderId": "1",
+        "title": "GROCERY AUCTION",
+        "saleNumber": "190317",
+        "date": "17/03/19",
+        "description": "A 20% buyers premium is added to all invoices",
+        "amount": "300",
+        "status": "paid"
+    },
+    {
+        "billingId": "3",
+        "bidderId": "1",
+        "title": "GROCERY AUCTION",
+        "saleNumber": "190317",
+        "date": "17/03/19",
+        "description": "A 20% buyers premium is added to all invoices",
+        "amount": "200",
+        "status": "paid"
+    }
+]
