@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+@import "assets/css/floor-auction-style.css";
+@import "assets/css/user-bidder-registration-style.css";
+@import "assets/css/user-billing-history-style.css";
+@import "assets/css/user-dashboard-aside-news-style.css";
+@import "assets/css/user-dashboard-style.css";
