@@ -11,6 +11,11 @@ import { BillingHistoryListItemComponent } from './bidder/billing-history-list-i
 import { BidderHeaderComponent } from './bidder/bidder-header/bidder-header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
+import { BidderModule } from './bidder/bidder.module';
+
+//import routes from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,13 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    FlexLayoutModule,
+    RouterModule.forRoot([
+      { path: 'billing', component: BillingHistoryListComponent },
+        { path: '', redirectTo: 'billing', pathMatch: 'full' },
+        { path: '**', redirectTo: 'billing', pathMatch: 'full' }
+      ])
   ],
   providers: [],
   bootstrap: [AppComponent]

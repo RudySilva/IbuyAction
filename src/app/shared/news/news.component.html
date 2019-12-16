@@ -1,54 +1,14 @@
-<aside class="aside-container">
-        <div class="breadcrumb">
-          <li><a href="3">News</a></li>
-        </div>
-        <div class="items-wrapper">
-          <div class="news-wrapper">
-            <!-- NEWS 1 -->
-            <div class="item">
-              <h1>Anniversary Sale</h1>
-              <p>
-                4 Day Anniversary Sale from 14th of April. Amazing In-Store
-                Deals at Up to 80% Off RRP!
-              </p>
-              <button class="btn btn-red">LEARN MORE ></button>
-            </div>
-            <!-- NEWS 2 -->
-            <div class="item">
-              <h1>Anniversary Sale</h1>
-              <p>
-                4 Day Anniversary Sale from 14th of April. Amazing In-Store
-                Deals at Up to 80% Off RRP!
-              </p>
-              <button class="btn btn-red">LEARN MORE ></button>
-            </div>
-            <!-- NEWS 3 -->
-            <div class="item">
-              <h1>Anniversary Sale</h1>
-              <p>
-                4 Day Anniversary Sale from 14th of April. Amazing In-Store
-                Deals at Up to 80% Off RRP!
-              </p>
-              <button class="btn btn-red">LEARN MORE ></button>
-            </div>
-            <!-- NEWS 4 -->
-            <div class="item">
-              <h1>Anniversary Sale</h1>
-              <p>
-                4 Day Anniversary Sale from 14th of April. Amazing In-Store
-                Deals at Up to 80% Off RRP!
-              </p>
-              <button class="btn btn-red">LEARN MORE ></button>
-            </div>
-            <!-- NEWS 5 -->
-            <div class="item">
-              <h1>Anniversary Sale</h1>
-              <p>
-                4 Day Anniversary Sale from 14th of April. Amazing In-Store
-                Deals at Up to 80% Off RRP!
-              </p>
-              <button class="btn btn-red">LEARN MORE ></button>
-            </div>
-          </div>
-        </div>
-      </aside>
+
+  <div class="breadcrumb">
+    <li><a href="3">News</a></li>
+  </div>
+  <div class="items-wrapper">
+    <div class="news-wrapper">
+      <div *ngFor='let new of news' class="item">
+          <h1>{{ new.title }}</h1>
+          <p>{{ new.description }}</p>
+          <button class="btn btn-red">LEARN MORE ></button>
+      </div>            
+    </div>
+  </div>
+

@@ -1,3 +1,18 @@
 [
-    {}
+    {
+        "bidderId": 1,
+        "bidderName": "Rudy Silva",
+        "bidderCompany": "Mi Tecnologies",
+        "address": "string",
+        "number": "7013",
+        "postCode": "string",
+        "phone": "string",
+        "mobile": "string",
+        "driverLicense": "string",
+        "city": "string",
+        "state": "string",
+        "country": "string",
+        "howActionsFindOut": "string",
+        "email": "string"
+    }
 ]

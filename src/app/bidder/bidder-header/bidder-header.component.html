@@ -4,12 +4,13 @@
         <img src="assets/images/iBuyAuction_Logo.png" >
       </div>
       <div class="top-header">
+          <a routerLinkActive="active" [routerLink]="['/billing']">Billing History</a> | 
+          <a routerLinkActive="active" [routerLink]="['/register']">Register</a>
           <app-bidder-number></app-bidder-number>
       </div>
       <div class="top-user">
         <app-bidder-username></app-bidder-username>        
       </div>
-      
     </header>
 </div>  
 

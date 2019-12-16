@@ -70,6 +70,13 @@ body {
   font-weight: 700;
 }
 
+.top-header a {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fff;
+}
+
 .top-user {
   order: 3;
   flex: 1;
